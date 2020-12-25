@@ -1,0 +1,212 @@
+/*!
+ * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+// scss-docs-start import-stack
+// Configuration
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "utilities";
+
+// Layout & components
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "containers";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "accordion";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "alert";
+@import "progress";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+
+// Helpers
+@import "helpers";
+
+// Utilities
+@import "utilities/api";
+// scss-docs-end import-stack
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.navbar {
+  opacity: 0.8;
+  .nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 0.6rem !important;
+    padding-right: 0.6rem !important;
+    margin: 2px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  @media (max-width: 576px) {
+    .active {
+      border-right: #444 3px solid;
+    }
+  }
+  @media (min-width: 576px) {
+    .active {
+      border-bottom: #444 3px solid;
+    }
+  }
+}
+
+// .carousel-item {
+//   width: 100%;
+//   height: 800px;
+// }
+
+.carousel-image-1 {
+  background: url("../img/image1.jpg");
+  background-size: cover;
+  height: 450px;
+}
+
+.carousel-image-2 {
+  background: url("../img/image2.jpg");
+  background-size: cover;
+  height: 450px;
+}
+
+.carousel-image-3 {
+  background: url("../img/image3.jpg");
+  background-size: cover;
+  height: 450px;
+}
+
+#home-heading {
+  position: relative;
+  min-height: 200px;
+  background: url("../img/lights.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.dark {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#video-play {
+  position: relative;
+  min-height: 200px;
+  background: url("../img/media.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 -300px;
+  text-align: center;
+  color: #fff;
+}
+
+#video-play a {
+  color: #fff;
+}
+
+#about-header {
+  height: 220px;
+  background: url("../img/pexels-picjumbocom-461077.jpg");
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+}
+
+#services-header {
+  height: 220px;
+  background: url("../img/pexels-john-petalcurin-2115257.jpg");
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+}
+
+#blog-header {
+  height: 220px;
+  background: url("../img/pexels-oleg-magni-2058128.jpg");
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+}
+
+#contact-header {
+  height: 220px;
+  background: url("../img/pexels-photo-4321027.jpg");
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+}
+
+.about-img {
+  margin-top: -50px;
+}
+
+.h200 {
+  height: 200px;
+  padding: 0 2rem 0 2rem;
+}
+
+#faq .accordion-body {
+  border-color: white !important;
+  border: 2px !important;
+  background-color: #333;
+}
+
+#faq .accordion-button.collapsed {
+  background: white !important;
+}
+
+.h4r {
+  height: 70px !important;
+}
+
+#main-footer {
+  color: white;
+  background: black;
+}
